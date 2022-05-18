@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", sans-serif;
+}
+.container {
+  margin: 0 auto;
+  padding-top: 9rem;
+  background-image: url("./assets/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 150vh;
+  margin-bottom: 5rem;
+}
+.text {
+  text-align: center;
+  padding: 4rem;
+}
+.topic {
+  font-size: 400%;
+  font-weight: 900;
+}
+.sub-text {
+  font-size: 120%;
+}
+.btn {
+  background: #000;
+  color: #fff;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+.cards {
+  display: flex;
+  place-content: space-around;
+  margin-top: 4rem;
+}
+img {
+  border-radius: 5px;
+}
+h5 {
+  z-index: 2;
+  margin-top: -3rem;
+  color: #fff;
+  font-weight: 600;
+  font-size: 120%;
+  margin-left: 2rem;
+}
+a {
+  text-decoration: none;
+}
+@media only screen and (max-width: 600px) {
+  .container {
+    background: url("./assets/backgroundmobile.jpg");
+    width: fit-content;
+    background-size: cover;
+    padding-top: 12rem;
+  }
+  .cards {
+    flex-direction: column;
+    place-content: center;
+    padding: 0 2rem;
+  }
+  .card {
+    margin: 2rem 0rem;
+  }
+  .text {
+    text-align: center;
+    padding: 0;
+  }
+  .topic {
+    font-size: 200%;
+    font-weight: 900;
+  }
+}
